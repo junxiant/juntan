@@ -1,0 +1,69 @@
+.contact_wrapper svg {
+  font-size: 1em;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.contact-form {
+  padding-top: 20px;
+
+  button {
+    float: right;
+    background-color: #5000ca;
+    color: white;
+  }
+
+  button:hover {
+    background-color: #3b0094;
+    color: white;
+  }
+
+  .MuiInputBase-root {
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+
+  .MuiInputBase-input {
+    color: #0d1116 !important;
+  }
+
+  .MuiInputLabel-root {
+    color: #495057 !important;
+
+    &.Mui-focused {
+      color: #5000ca !important;
+    }
+  }
+
+  fieldset {
+    border-color: #ced4da !important;
+  }
+
+  .Mui-focused fieldset {
+    border-color: #5000ca !important;
+  }
+}
+
+label {
+  font-size: 1.2rem;
+  font-family: 'DomaineDispNar-Medium', sans-serif;
+}
+
+.form-flex {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 15px;
+}
+
+.form-flex .MuiFormControl-root {
+  width: 100%;
+}
+
+form {
+  width: 100% !important;
+}
+
+.body-form {
+  width: 100% !important;
+  margin-bottom: 15px !important;
+}
