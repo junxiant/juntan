@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import '../assets/styles/Contact.scss';
-// import emailjs from '@emailjs/browser';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
@@ -16,37 +15,28 @@ function Contact() {
   const [emailError, setEmailError] = useState<boolean>(false);
   const [messageError, setMessageError] = useState<boolean>(false);
 
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e: any) => {
+  const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
-    setNameError(name === '');
-    setEmailError(email === '');
-    setMessageError(message === '');
+    const isNameEmpty = name.trim() === '';
+    const isEmailEmpty = email.trim() === '';
+    const isMessageEmpty = message.trim() === '';
 
-    /* Uncomment below if you want to enable the emailJS */
+    setNameError(isNameEmpty);
+    setEmailError(isEmailEmpty);
+    setMessageError(isMessageEmpty);
 
-    // if (name !== '' && email !== '' && message !== '') {
-    //   var templateParams = {
-    //     name: name,
-    //     email: email,
-    //     message: message
-    //   };
+    if (!isNameEmpty && !isEmailEmpty && !isMessageEmpty) {
+      const subject = encodeURIComponent(`Portfolio Inquiry from ${name.trim()}`);
+      const body = encodeURIComponent(
+        `Hi Jun,\n\n${message.trim()}\n\n---\nSender Name: ${name.trim()}\nContact Email / Phone: ${email.trim()}`
+      );
 
-    //   console.log(templateParams);
-    //   emailjs.send('service_id', 'template_id', templateParams, 'api_key').then(
-    //     (response) => {
-    //       console.log('SUCCESS!', response.status, response.text);
-    //     },
-    //     (error) => {
-    //       console.log('FAILED...', error);
-    //     },
-    //   );
-    //   setName('');
-    //   setEmail('');
-    //   setMessage('');
-    // }
+      // Open user's default email client
+      window.location.href = `mailto:junxiantjx@gmail.com?subject=${subject}&body=${body}`;
+    }
   };
 
   return (
@@ -61,6 +51,7 @@ function Contact() {
             noValidate
             autoComplete="off"
             className='contact-form'
+            onSubmit={sendEmail}
           >
             <div className='form-flex'>
               <TextField
@@ -71,6 +62,7 @@ function Contact() {
                 value={name}
                 onChange={(e) => {
                   setName(e.target.value);
+                  if (e.target.value.trim() !== '') setNameError(false);
                 }}
                 error={nameError}
                 helperText={nameError ? "Please enter your name" : ""}
@@ -83,6 +75,7 @@ function Contact() {
                 value={email}
                 onChange={(e) => {
                   setEmail(e.target.value);
+                  if (e.target.value.trim() !== '') setEmailError(false);
                 }}
                 error={emailError}
                 helperText={emailError ? "Please enter your email or phone number" : ""}
@@ -99,11 +92,16 @@ function Contact() {
               value={message}
               onChange={(e) => {
                 setMessage(e.target.value);
+                if (e.target.value.trim() !== '') setMessageError(false);
               }}
               error={messageError}
               helperText={messageError ? "Please enter the message" : ""}
             />
-            <Button variant="contained" endIcon={<SendIcon />} onClick={sendEmail}>
+            <Button
+              type="submit"
+              variant="contained"
+              endIcon={<SendIcon />}
+            >
               Send
             </Button>
           </Box>
