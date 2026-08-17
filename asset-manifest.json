@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/juntan/static/css/main.b37441e9.css",
+    "main.js": "/juntan/static/js/main.050db468.js",
+    "static/js/453.fe43578e.chunk.js": "/juntan/static/js/453.fe43578e.chunk.js",
+    "static/media/recycit_thumb.jpg": "/juntan/static/media/recycit_thumb.68fc119edda155eeb04c.jpg",
+    "static/media/pneumonia_thumb.png": "/juntan/static/media/pneumonia_thumb.85245d7b2f54b821ff3d.png",
+    "static/media/profile.jpg": "/juntan/static/media/profile.b7bd19a712d84f129aee.jpg",
+    "static/media/bg-light.png": "/juntan/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/bg-dark.png": "/juntan/static/media/bg-dark.f420c6b8458af72de935.png",
+    "static/media/heartdisease_thumb.jpg": "/juntan/static/media/heartdisease_thumb.53bf1a84562a70d7052c.jpg",
+    "static/media/alz_thumb.jpg": "/juntan/static/media/alz_thumb.93663194144b30326dd4.jpg",
+    "static/media/medreportexplainer_thumb.jpg": "/juntan/static/media/medreportexplainer_thumb.5fa8425aa397431ffeb9.jpg",
+    "index.html": "/juntan/index.html",
+    "main.b37441e9.css.map": "/juntan/static/css/main.b37441e9.css.map",
+    "main.050db468.js.map": "/juntan/static/js/main.050db468.js.map",
+    "453.fe43578e.chunk.js.map": "/juntan/static/js/453.fe43578e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b37441e9.css",
+    "static/js/main.050db468.js"
+  ]
+}
