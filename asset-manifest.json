@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.5b1d49e3.css",
+    "main.css": "/static/css/main.10f08c66.css",
     "main.js": "/static/js/main.009dd65a.js",
     "static/js/453.fe43578e.chunk.js": "/static/js/453.fe43578e.chunk.js",
+    "static/media/tekapo-bg.jpg": "/static/media/tekapo-bg.f58913cb20ce91146fb3.jpg",
     "static/media/recycit_thumb.jpg": "/static/media/recycit_thumb.68fc119edda155eeb04c.jpg",
     "static/media/pneumonia_thumb.png": "/static/media/pneumonia_thumb.85245d7b2f54b821ff3d.png",
     "static/media/profile.jpg": "/static/media/profile.b7bd19a712d84f129aee.jpg",
-    "static/media/bg-light.png": "/static/media/bg-light.bac0efb485244a522981.png",
-    "static/media/bg-dark.png": "/static/media/bg-dark.f420c6b8458af72de935.png",
     "static/media/heartdisease_thumb.jpg": "/static/media/heartdisease_thumb.53bf1a84562a70d7052c.jpg",
     "static/media/alz_thumb.jpg": "/static/media/alz_thumb.93663194144b30326dd4.jpg",
     "static/media/medreportexplainer_thumb.jpg": "/static/media/medreportexplainer_thumb.5fa8425aa397431ffeb9.jpg",
     "index.html": "/index.html",
-    "main.5b1d49e3.css.map": "/static/css/main.5b1d49e3.css.map",
+    "main.10f08c66.css.map": "/static/css/main.10f08c66.css.map",
     "main.009dd65a.js.map": "/static/js/main.009dd65a.js.map",
     "453.fe43578e.chunk.js.map": "/static/js/453.fe43578e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b1d49e3.css",
+    "static/css/main.10f08c66.css",
     "static/js/main.009dd65a.js"
   ]
 }
