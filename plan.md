@@ -1,6 +1,5 @@
 # Implementation Plan
 
-- [x] 1. Update homepage in package.json to https://juntan.dev
-- [x] 2. Create CNAME file with juntan.dev in public/
-- [x] 3. Build project with npm run build
-- [ ] 4. Deploy updated build with npm run deploy
+- [x] 1. Reduce overlay opacity in src/assets/styles/Main.scss and add text shadow for readability
+- [x] 2. Reduce overlay opacity in src/index.scss for light mode
+- [x] 3. Mark tasks complete
