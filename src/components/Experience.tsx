@@ -61,6 +61,51 @@ function Experience() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
+            date="Dec 2021 – May 2022"
+            iconStyle={{ background: '#5000ca', color: '#fff' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">Technical Writer (Contract)</h3>
+            <h4 className="vertical-timeline-element-subtitle">Kili Technology</h4>
+            <p>
+              Authored technical documentation and developer guides covering machine learning training data annotation and labeling workflows.
+            </p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            contentArrowStyle={{ borderRight: '7px solid  white' }}
+            date="May 2021 – Aug 2021"
+            iconStyle={{ background: '#5000ca', color: '#fff' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">Data Scientist Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Google</h4>
+            <p>
+              Conducted exploratory data analysis, statistical modeling, and machine learning experiments to drive data-informed product insights.
+            </p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            contentArrowStyle={{ borderRight: '7px solid  white' }}
+            date="May 2020 – Jul 2020"
+            iconStyle={{ background: '#5000ca', color: '#fff' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">AI Researcher Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Tencent Cloud</h4>
+            <p>
+              Researched artificial intelligence and deep learning algorithms, evaluating novel architectures and model performance for scalable cloud solutions.
+            </p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            contentArrowStyle={{ borderRight: '7px solid  white' }}
             date="Feb 2016 – Mar 2017"
             iconStyle={{ background: '#5000ca', color: '#fff' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
