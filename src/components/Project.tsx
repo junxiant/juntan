@@ -1,4 +1,5 @@
 import React from "react";
+import orbitmeshImg from '../assets/images/orbitmesh_thumb.jpg';
 import recycitImg from '../assets/images/recycit_thumb.jpg';
 import alzImg from '../assets/images/alz_thumb.jpg';
 import pneumoniaImg from '../assets/images/pneumonia_thumb.png';
@@ -7,6 +8,12 @@ import medReportImg from '../assets/images/medreportexplainer_thumb.jpg';
 import '../assets/styles/Project.scss';
 
 const projects = [
+    {
+        title: "Orbit Mesh Chatbot Assistant",
+        image: orbitmeshImg,
+        link: "https://github.com/junxiant/OrbitMeshTest",
+        description: "Full-stack hybrid RAG support assistant featuring dual dense/sparse retrieval with Qdrant server-side fusion, dynamic threshold calibration, and deterministic safety guardrails."
+    },
     {
         title: "e-Waste Sorter",
         image: recycitImg,

@@ -1,5 +1,5 @@
 # Implementation Plan
 
-- [x] 1. Reduce overlay opacity in src/assets/styles/Main.scss and add text shadow for readability
-- [x] 2. Reduce overlay opacity in src/index.scss for light mode
-- [x] 3. Mark tasks complete
+- [x] 1. Add Orbit Mesh thumbnail image to src/assets/images/
+- [x] 2. Update src/components/Project.tsx to import image and add Orbit Mesh Chatbot Assistant project entry
+- [x] 3. Verify build succeeds without running tests
